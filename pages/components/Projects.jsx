@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import AdminPanel from "../../public/assets/projects/AdminPanel.png";
 import CarRental from "../../public/assets/projects/CarRental.png"
 import educationalWebsiteProject from "../../public/assets/projects/educationalWebsiteProject.png"
-import studentRegistrationProject from "../../public/assets/projects/studentRegistrationProject.png"
 import Blog from "../../public/assets/projects/Blog.png"
 import ProjectItem from "./ProjectItem";
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import AdminPanel from "../../public/assets/projects/AdminPanel.png";
 import Link from "next/link";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl }) => {

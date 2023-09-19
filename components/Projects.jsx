@@ -1,8 +1,8 @@
 import React from "react";
-import AdminPanel from "../../public/assets/projects/AdminPanel.png";
-import CarRental from "../../public/assets/projects/CarRental.png"
-import educationalWebsiteProject from "../../public/assets/projects/educationalWebsiteProject.png"
-import Blog from "../../public/assets/projects/Blog.png"
+import AdminPanel from "../public/assets/projects/AdminPanel.png";
+import CarRental from "../public/assets/projects/CarRental.png"
+import educationalWebsiteProject from "../public/assets/projects/educationalWebsiteProject.png"
+import Blog from "../public/assets/projects/Blog.png"
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {

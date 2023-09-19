@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import AdminPanel from "../../public/assets/projects/AdminPanel.png";
-import Link from "next/link";
+import CarRental from "../../public/assets/projects/CarRental.png"
+import educationalWebsiteProject from "../../public/assets/projects/educationalWebsiteProject.png"
+import studentRegistrationProject from "../../public/assets/projects/studentRegistrationProject.png"
+import Blog from "../../public/assets/projects/Blog.png"
+import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
@@ -12,20 +16,30 @@ const Projects = () => {
       <h2 className="py-4">What I've Built</h2>
       <div className="grid md:grid-cols-2 gap-8">
 
-        <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
-          <Image
-            className="rounded-xl group-hover:opacity-10"
-            src={AdminPanel}
-            alt="/"
-          />
-          <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h3 className="text-2xl text-white tracking-wider text-center">Admin Panel</h3>
-            <p className="pb-4 pt-2 text-white text-center">React Js</p>
-            <Link href="/">
-              <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">More Info</p>
-            </Link>
-          </div>
-        </div>
+        <ProjectItem
+          title="Admin Panel"
+          backgroundImg={AdminPanel}
+          projectUrl="/adminPanel"
+        />
+
+        <ProjectItem
+          title="Car Rental System"
+          backgroundImg={CarRental}
+          projectUrl="/carRental"
+        />
+
+        <ProjectItem
+          title="Educational Website"
+          backgroundImg={educationalWebsiteProject}
+          projectUrl="/educationalWebSite"
+        />
+
+        <ProjectItem
+          title="Blog Site"
+          backgroundImg={Blog}
+          projectUrl="/blogSite"
+        />
+
         
       </div>
     </div>

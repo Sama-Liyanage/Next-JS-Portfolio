@@ -86,7 +86,14 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image src="/../public/assets/logo.png" width="87" height="35" />
+              <Link href='/'>
+                <Image
+                  src="/../public/assets/logo.png"
+                  width="87"
+                  height="35"
+                />
+              </Link>
+
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg  shadow-gray-400 p-3 cursor-pointer"
@@ -103,19 +110,19 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <li className="py-4 test-sm">
-                <Link href="/">Home</Link>
+                <Link href="/#home">Home</Link>
               </li>
               <li className="py-4 test-sm">
-                <Link href="/about">About</Link>
+                <Link href="/#about">About</Link>
               </li>
               <li className="py-4 test-sm">
-                <Link href="/skills">Skills</Link>
+                <Link href="/#skills">Skills</Link>
               </li>
               <li className="py-4 test-sm">
-                <Link href="/projects">Projects</Link>
+                <Link href="/#projects">Projects</Link>
               </li>
               <li className="py-4 test-sm">
-                <Link href="/contact">Contact</Link>
+                <Link href="/#contact">Contact</Link>
               </li>
             </ul>
             <div className="pt-10">

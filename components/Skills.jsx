@@ -1,5 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { BiLogoJava ,BiLogoTailwindCss,BiLogoCss3,BiLogoJavascript,BiLogoReact,BiLogoJquery,BiLogoBootstrap,BiLogoGithub} from "react-icons/bi";
+import { AiFillHtml5 } from "react-icons/ai";
+import { SiSpring ,SiMui,SiAntdesign,SiNextdotjs} from "react-icons/si";
+import { FaNode } from "react-icons/fa";
 
 const Skills = () => {
   return (
@@ -10,16 +14,10 @@ const Skills = () => {
         </p>
         <h2 className="py-4">What I Can Do</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/java.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoJava className="w-10 h-10" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Java</h3>
@@ -30,12 +28,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/html.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <AiFillHtml5 className="w-10 h-10" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>HTML</h3>
@@ -46,12 +39,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/css.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoCss3 className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
@@ -62,12 +50,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/js.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoJavascript className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
@@ -78,12 +61,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/nextjs.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <SiNextdotjs className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Next Js</h3>
@@ -94,12 +72,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/react.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+              <BiLogoReact className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>React</h3>
@@ -110,12 +83,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/nodejs.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <FaNode className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Node Js</h3>
@@ -126,12 +94,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/spring.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <SiSpring className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Spring</h3>
@@ -142,12 +105,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/jquery.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoJquery className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JQuery</h3>
@@ -158,12 +116,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/bootstrap.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoBootstrap className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Bootstrap</h3>
@@ -174,12 +127,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/mui.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <SiMui className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>MUI</h3>
@@ -187,16 +135,10 @@ const Skills = () => {
             </div>
           </div>
 
-
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/ant.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <SiAntdesign className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>ANT</h3>
@@ -207,12 +149,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/tailwind.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoTailwindCss className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Tailwind</h3>
@@ -223,20 +160,13 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/github.png"
-                  width="64"
-                  height="64"
-                  alt=""
-                />
+                <BiLogoGithub className="w-10 h-10"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>GitHub</h3>
               </div>
             </div>
           </div>
-          
-
         </div>
       </div>
     </div>

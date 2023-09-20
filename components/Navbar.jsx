@@ -4,11 +4,35 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const [shadow, setShadow] = useState(false);
+
+  const [navBg, setNavBg] = useState('#ecf0f3');
+
+  const [linkColor, setLinkColor] = useState('#1f2937');
+
+  const router = useRouter();
+
+   useEffect(() => {
+    if (
+      router.asPath === '/adminPanel' ||
+      router.asPath === '/carRental' ||
+      router.asPath === '/educationalSite' ||
+      router.asPath === '/blogSite'
+    ) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937');
+    }
+  }, [router]);
+
 
   const handleNav = () => {
     setNav(!nav);
@@ -27,6 +51,7 @@ const Navbar = () => {
 
   return (
     <div
+    style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -44,7 +69,7 @@ const Navbar = () => {
         </Link>
 
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>

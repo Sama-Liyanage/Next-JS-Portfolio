@@ -5,53 +5,61 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  const [shadow,setShadow]=useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-useEffect(() => {
-  const handleShow=()=>{
-    if(window.scrollY>=90){
-      setShadow(true);
-    }else{
-      setShadow(false)
-    }
-  }
-  window.addEventListener('scroll',handleShow);
-},[]);
+  useEffect(() => {
+    const handleShow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShow);
+  }, []);
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]":"fixed w-full h-20  z-[100]"}>
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20  z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/logo.png"
-          alt=""
-          width="125"
-          height="50"
-        />
+        <Link href="/">
+          <Image
+            src="/../public/assets/logo.png"
+            alt=""
+            width="125"
+            height="50"
+          />
+        </Link>
+
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
+            <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -65,7 +73,9 @@ useEffect(() => {
       </div>
 
       <div
-        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={

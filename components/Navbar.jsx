@@ -6,33 +6,31 @@ import { BsPersonLinesFill } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const [shadow, setShadow] = useState(false);
 
-  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [navBg, setNavBg] = useState("#ecf0f3");
 
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [linkColor, setLinkColor] = useState("#1f2937");
 
   const router = useRouter();
 
-   useEffect(() => {
+  useEffect(() => {
     if (
-      router.asPath === '/adminPanel' ||
-      router.asPath === '/carRental' ||
-      router.asPath === '/educationalSite' ||
-      router.asPath === '/blogSite'
+      router.asPath === "/adminPanel" ||
+      router.asPath === "/carRental" ||
+      router.asPath === "/educationalSite" ||
+      router.asPath === "/blogSite"
     ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
     } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
     }
   }, [router]);
-
 
   const handleNav = () => {
     setNav(!nav);
@@ -51,7 +49,7 @@ const Navbar = () => {
 
   return (
     <div
-    style={{ backgroundColor: `${navBg}` }}
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -111,7 +109,7 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href='/'>
+              <Link href="/">
                 <Image
                   src="/../public/assets/logo.png"
                   width="87"
@@ -134,19 +132,19 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <li onClick={()=>setNav(false)} className="py-4 test-sm">
+              <li onClick={() => setNav(false)} className="py-4 test-sm">
                 <Link href="/#home">Home</Link>
               </li>
-              <li onClick={()=>setNav(false)} className="py-4 test-sm">
+              <li onClick={() => setNav(false)} className="py-4 test-sm">
                 <Link href="/#about">About</Link>
               </li>
-              <li onClick={()=>setNav(false)} className="py-4 test-sm">
+              <li onClick={() => setNav(false)} className="py-4 test-sm">
                 <Link href="/#skills">Skills</Link>
               </li>
-              <li onClick={()=>setNav(false)} className="py-4 test-sm">
+              <li onClick={() => setNav(false)} className="py-4 test-sm">
                 <Link href="/#projects">Projects</Link>
               </li>
-              <li onClick={()=>setNav(false)} className="py-4 test-sm">
+              <li onClick={() => setNav(false)} className="py-4 test-sm">
                 <Link href="/#contact">Contact</Link>
               </li>
             </ul>
@@ -155,18 +153,26 @@ const Navbar = () => {
                 Let's Connect
               </p>
               <div className="flex items-center justify-between my-2 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedin />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsPersonLinesFill />
-                </div>
+                <a href="https://www.linkedin.com/in/samadhi-nilakshana">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedin />
+                  </div>
+                </a>
+                <a href="https://github.com/Sama-Liyanage">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </a>
+                <a href="mailto: samadhiliyyanage@gmail.com">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineMail />
+                  </div>
+                </a>
+                <a href="tel:0705371558">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsPersonLinesFill />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

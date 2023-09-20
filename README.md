@@ -8,6 +8,6 @@ In this project, I have created a modern and dynamic portfolio website using Nex
 **Tailwind CSS Styling**
 - The website's aesthetics are powered by Tailwind CSS, a utility-first CSS framework. Tailwind CSS allows for rapid development with pre-defined classes that make styling efficient and consistent. The result is a visually appealing and responsive design that enhances the user experience.
 
-Vercel; Link:-https://samadhi-portfoliopalette.vercel.app/
+Vercel Link:-https://samadhi-portfoliopalette.vercel.app/
 
 

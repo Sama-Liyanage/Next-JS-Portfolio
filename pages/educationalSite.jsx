@@ -1,10 +1,10 @@
 import React from "react";
-import AdminPanel from "../public/assets/projects/AdminPanel.png";
+import educationalWebsiteProject from "../public/assets/projects/educationalWebsiteProject.png";
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const adminPanel = () => {
+const educationalSite = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[48vh] relative">
@@ -13,12 +13,12 @@ const adminPanel = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={AdminPanel}
+          src={educationalWebsiteProject}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">React Responsive Admin Panel</h2>
-          <h3>React Js</h3>
+          <h2 className="py-2">Educational Website</h2>
+          <h3>HTML,CSS,JS</h3>
         </div>
       </div>
 
@@ -29,19 +29,18 @@ const adminPanel = () => {
           </p>
           <h2>Overview</h2>
           <p>
-            The React Responsive Admin Panel is a dynamic web application
-            designed to provide a user-friendly interface for managing and
-            visualizing data. It is built using a modern tech stack and
-            leverages various libraries and tools to deliver a seamless user
-            experience. 
+            A responsive educational website created using HTML, CSS, and
+            JavaScript is designed to provide an optimal user experience on
+            various devices and screen sizes, such as desktop computers,
+            tablets, and smartphones. It combines the power of these three
+            technologies to deliver engaging and interactive educational content
           </p>
-          <Link href="https://react-admin-dashboard-template-design.vercel.app/">
+          <Link href="">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </Link>
-          <Link href="https://github.com/Sama-Liyanage/ReactAdmin-Dashboard-Template-Design">
-          <button className="px-8 py-2 mt-4">Code</button>
+          <Link href="https://github.com/Sama-Liyanage/Car-Rental-System-Full-Project">
+            <button className="px-8 py-2 mt-4">Code</button>
           </Link>
-
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -49,30 +48,26 @@ const adminPanel = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React Js
+                HTML
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                MUI
+                CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                ApexChart
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                GitHub
+                JavaScript
               </p>
             </div>
           </div>
         </div>
 
         <Link href="/#projects">
-          <p className="underline cursor-auto">Back</p>
+          <p className="underline cursor-pointer">Back</p>
         </Link>
       </div>
     </div>
   );
 };
 
-export default adminPanel;
+export default educationalSite;

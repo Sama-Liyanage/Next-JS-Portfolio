@@ -29,7 +29,7 @@ const Projects = () => {
         <ProjectItem
           title="Educational Website"
           backgroundImg={educationalWebsiteProject}
-          projectUrl="/educationalWebSite"
+          projectUrl="/educationalSite"
         />
 
         <ProjectItem

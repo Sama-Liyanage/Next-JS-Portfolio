@@ -110,9 +110,11 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
-                </button>
+                <a href="mailto: samadhiliyyanage@gmail.com">
+                  <button className="w-full p-4 text-gray-100 mt-4">
+                    Send Message
+                  </button>
+                </a>
               </form>
             </div>
           </div>
